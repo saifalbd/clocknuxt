@@ -1,0 +1,26 @@
+# dependencies
+node_modules
+
+# logs
+npm-debug.log
+
+# Nuxt build
+.nuxt
+
+# Nuxt generate
+dist
+
+# Backpack build
+build
+
+#unuse folder
+pageOld
+
+#package
+package-lock.json
+
+#old page
+oldpackage.json
+
+#vscode 
+.vscode

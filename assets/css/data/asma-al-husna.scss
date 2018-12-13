@@ -1,0 +1,46 @@
+.asmaAlHasnaPage{
+    $border : #0070ff;
+    background-color: #ffff;
+    .asma-al-hasna-inner{
+        border:0.5px solid $border;
+        border-bottom: 1px solid $border;
+        width:calc(100% - 0.5px);
+        margin-bottom: 2px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        @include xs { grid-template-columns: repeat(1, 1fr);}
+        @include sm { grid-template-columns: repeat(2, 1fr);}
+        @include md { grid-template-columns: repeat(3, 1fr);}
+        @include lg { grid-template-columns: repeat(4, 1fr);}
+    .name-box{
+       border:0.5px solid $border;
+       padding: 5px;
+       overflow: hidden;
+       position: relative;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+       .number{
+        height: 55px;
+        width: 55px;
+        position: absolute;
+        left: 0;
+        top: 0;
+           font-size: 1.2rem;
+           text-align: right;
+           transform: rotate(45deg) translateX(-50%) translateY(50%);
+           background: $border;
+           border-radius: 5px;
+           color: #ffffff;
+       }
+       .name-ar{
+           position: relative;
+           font-size: 3rem;
+       }
+       .transliteration{
+           font-size: 1.3rem;
+       }
+    }
+    }
+    }

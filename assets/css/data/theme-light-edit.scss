@@ -1,0 +1,41 @@
+
+.theme--light{
+    color:#000;
+    &.v-navigation-drawer{
+        background-color: #fefeff;
+    }
+    &.primary--text{color: rgba(46, 5, 53, 0.99)  !important;}
+    .primary--text{color: rgba(46, 5, 53, 0.99)  !important;}
+    &.v-table{
+    background-color: rgba(4, 3, 45, 0.46);
+    border-left: 7px solid gold;
+    border-right: 7px solid gold;
+       thead{tr{
+        @extend %black-bg;
+           th{ color: #fefeff;  font-size: 1rem; font-weight: bold;
+            border-left:1px solid #cddc39;
+            border-right:1px solid #cddc39;
+            
+        
+        } }
+           &:first-child{
+               border-bottom: 1px solid rgba(169, 182, 169, 0.95);
+           }
+        }
+        tbody{
+            tr{td{color: #fefeff;  font-size: 1rem;font-weight: bold;
+            border:1px solid #cddc39;
+            &.tmpChangeMonth{
+                @extend %black-bg;
+            }
+            }
+            &:hover:not(.v-datatable__expand-row){
+                background: #2e0535;
+                td{color: #ffff;}
+                
+            }
+        }
+        }
+    }
+  
+}

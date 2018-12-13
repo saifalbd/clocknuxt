@@ -1,0 +1,67 @@
+@import './data/mxin.scss';
+
+#app {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    font-weight: bold;
+    overflow-x: hidden;
+    min-height: 100vh;
+  }
+  
+
+
+.global_page_content{
+    background-color: rgb(185, 181, 181);
+   
+}
+
+a{
+    text-decoration: none;
+}
+.headlineBox{
+    padding: 2rem 0;
+    
+    width: 100%;
+    .bottomLine{
+    display: flex;
+    height: 30px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+   color: #1b5e20;
+     svg{
+width: 100%;
+path{
+    stroke:currentColor;
+    stroke-width:0.02rem;
+}
+
+        
+     }
+        
+    }
+   .headLine{
+       font-size: 2rem;
+       margin: 1rem 0;
+   } 
+   .headLineTxt{
+    margin: 1rem 0;
+   }
+}
+
+@import './data/theme-light-edit.scss';
+
+@import './data/home.scss';
+
+@import './data/asma-al-husna.scss';
+@import './data/calender-page.scss';
+
+@import './data/name-of-surah.scss';
+
+@import './data/surah-index-page.scss';
+
+@import './data/read-quran.scss';
+
+@import './data/contactus.scss';

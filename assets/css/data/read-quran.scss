@@ -1,0 +1,211 @@
+
+.readQuranPage{
+background: white;
+    .infoBox,.infoBox-innar{
+        min-height: 300px;
+        width: 100%;
+       
+    }
+    .infoBox{
+        background: #121733;
+        clip-path: polygon(50% 0%, 100% 10%, 100% 100%, 0 100%, 0% 10%);
+    }
+    .infoBox-innar{
+        background: #fffcdd;
+        clip-path: polygon(50% 0%, 75% 10%, 100% 15%, 100% 100%, 0 100%, 0 15%, 25% 10%);
+       
+     .numberBox{
+        position: relative;
+        display: flex;
+        justify-content: center;
+       
+       
+        padding-top: 5px;
+        .circleBox{
+            position: relative;
+            width:75px;
+            padding-top:75px;
+            border: 2px solid blueviolet;
+            border-radius:100%;
+            overflow: hidden;
+            .setNumber{
+            position: absolute;
+            top:0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background:#CDDC39;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size:2rem;
+            }
+            }
+        
+     }   
+.textInfo{
+font-size:1.5rem;
+.infoNameAr{
+font-size: 4rem;
+}
+}
+.textInfoTenslation{
+display: flex;
+justify-content: center;
+fieldset{
+font-size: 1.2rem;
+padding: 5px;
+}
+}
+.changeSurah{
+position: relative;
+left: 50%;
+transform: translateX(-50%);
+background-color:rgb(11, 22, 84);
+color: #fffcdd;
+min-height: 50px;
+width: 220px;
+cursor: pointer;
+text-transform: uppercase;
+clip-path: polygon(50% 0%, 100% 20%, 100% 100%, 0 100%, 0 20%);
+font-size: 1.5rem;
+border-radius: 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 5px 0;
+}
+    }
+
+    @include sm-up {
+        .infoBox{
+            background: #7e7cd4;
+            clip-path: polygon(50% 0%, 75% 25%, 100% 35%, 100% 100%, 0 100%, 0 35%, 25% 25%);
+        }
+        .infoBox-innar{
+            background: #fffcdd;
+            clip-path: polygon(50% 0%, 75% 30%, 100% 35%, 100% 100%, 0 100%, 0 35%, 25% 30%);
+            .changeSurah{
+              //  clip-path: polygon(0 50%, 50% 0, 100% 50%, 50% 100%); 
+            }
+        }
+    
+    
+    }
+    
+.readQuranText{
+    .readSingleAyasInfo{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:  wrap;
+    background-color: rgba(205, 220, 57, 0.25);
+    li{
+    background: #d5e069;
+    color: rgb(2, 1, 21);
+    padding:3px 10px;
+    border-radius: 10px;
+    list-style-type: none;
+    margin:3px 0;
+    .number{
+    background-color: #121733;
+    color: #fffcdd;
+    padding: 0 5px;
+    border-radius:1rem;
+    }
+    }
+    }
+    .readSingleAyasMain{
+        font-size: 1.9rem;
+        &.fullView{.textLine{padding: 0.3rem;}}
+      
+        }
+    .readSingleAyasTanslation{
+    font-size: 1.3rem;
+    &.fullView{.textLine{padding: 0.2rem;}}
+   
+    }
+    .readSingleAyasMain.fullView ,.readSingleAyasTanslation.fullView{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+.fullView{ 
+
+    .verseSign{
+        $width :1.1em;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        width: $width ;
+        height: $width*1.2;
+        position: relative;
+        overflow: hidden;
+        margin: 0 1px;
+       
+        .ayasNumber{
+        position: relative;
+        font-size: 0.5em;
+        z-index: 1;
+        transform: translateX(-11%);
+        }
+        .innerSign{
+        position: absolute;
+        left: 0;
+        top: 46%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:100%;
+        
+        transform: translateY(-50%);
+        img{
+        width: 100%;
+        max-width: 100%;
+        transform:translate(7% , 17%) scale(1.8);
+        }
+        }
+        }
+    }
+
+
+
+
+}
+.filterTabs{
+.active{
+background: #04000a;
+color: #fdfdfa;
+}
+.v-tabs__slider{
+position: relative;
+z-index: 1;
+}
+
+}
+.OnOffLang{
+background-color: rgba(213, 224, 105, 0.51);
+padding: 5px 5px;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+.tans ,.ar,.infos{
+height: 45px;
+padding: 0 10px;
+border: 2px solid gold;
+border-radius: 20px;
+color: black;
+display: flex;
+justify-content: center;
+align-items: center;
+overflow: hidden;
+.v-input{
+
+}
+}
+}
+
+}

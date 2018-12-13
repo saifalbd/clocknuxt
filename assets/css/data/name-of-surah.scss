@@ -1,0 +1,70 @@
+
+.nameOfSurahPage{
+  
+    .nameListBox{
+        margin-top:5px;
+        position: relative;
+        .v-card{
+            box-shadow: none;
+            background: none;
+            }
+          
+        border-bottom: 3px solid rgb(211, 253, 253);
+        .item{
+            .itemCard{
+                background-color: rgb(211, 253, 253);
+               
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+               
+            }
+        
+          &.one{
+            .itemCard{
+                display: flex;
+                 background-color: darkorchid; color: #ffffff;}
+          }
+          &.two{ .itemCard{
+            
+            padding-top: 5px;}
+        .layout{
+            .flex{
+                &:nth-child(1){
+                    background: #a1ecf1;
+                }
+            }
+        }
+        }
+          &.three{
+            .itemCard{
+                display: flex;
+                background-color: darkorchid; color: #ffffff;}
+            
+          }
+        }
+        .numberBox{
+            background-color: rgb(211, 253, 253);
+   -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+display: flex;
+justify-content: center;
+align-items: center;
+            .numberCircle{
+                $base:10px;
+                z-index: 100;
+                position: relative;
+                
+                width:$base*20;
+                background-color: #86d8d4;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 2rem;
+                -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+                clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+            }
+    }
+    }  
+}
